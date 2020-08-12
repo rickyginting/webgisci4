@@ -20,7 +20,7 @@ Download dengan cara
 
 ## Konfigurasi
 
-Pastikan kamu sudah menjalankan local server kamu, kemudian ubah file `env` menjadi `.env` dan migrate file database dengan cara `php sprak migrate` kemudain jalankan server `php sprak serve`
+Pastikan kamu sudah menjalankan local server kamu, kemudian ubah file `env` menjadi `.env` dan migrate file database dengan cara `php spark migrate` kemudain jalankan server `php spark serve`
 
 ## Screenshots
 
