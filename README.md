@@ -45,6 +45,6 @@ Pastikan kamu sudah menjalankan local server kamu, kemudian ubah file `env` menj
 ![Screenshot (46)](https://user-images.githubusercontent.com/46182403/90000946-0048fd80-dcbb-11ea-8563-3dfe3cd47689.png)
 **Halaman Tambah Sekolah**
 
-Follow saya juga di [Instagram](https://instagram.com/rickymartin_) dan [Facebook](https://facebook.com/icky.12)
+Follow saya juga di [Instagram](https://instagram.com/rickyginting_) dan [Facebook](https://facebook.com/icky.12)
 
 
