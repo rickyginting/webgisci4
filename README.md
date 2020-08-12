@@ -1,64 +1,50 @@
-# CodeIgniter 4 Application Starter
+# WebGis CodeIgniter 4
 
-## What is CodeIgniter?
+## Apa Itu Web GIS
 
-CodeIgniter is a PHP full-stack web framework that is light, fast, flexible, and secure. 
-More information can be found at the [official site](http://codeigniter.com).
+Web Geographic Information System ( WebGIS ). Menurut Prahasta (2007), WebGIS adalah aplikasi GIS atau pemetaan digital
+Website ini di kembangkan dengan
+[Codeigniter 4 ](https://codeigniter.com/)
+[Myth Auth](https://github.com/lonnieezell/myth-auth)
+[LeaFlet](https://leafletjs.com/)
+[Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
-This repository holds a composer-installable app starter.
-It has been built from the 
-[development repository](https://github.com/codeigniter4/CodeIgniter4).
+## Cara Pemasangan
 
-More information about the plans for version 4 can be found in [the announcement](http://forum.codeigniter.com/thread-62615.html) on the forums.
+Pastikan kamu di komputer kamu sudah terpasang
+[Composer](https://getcomposer.org/) dan [Git](https://git-scm.com/)
 
-The user guide corresponding to this version of the framework can be found
-[here](https://codeigniter4.github.io/userguide/). 
+Download dengan cara
+`git clone https://github.com/rickyginting/WebGis-CodeIgniter-4.git` Setelah proses selesai silahkan lakukan update dependencies dengan cara `composer update`
 
-## Installation & updates
 
-`composer create-project codeigniter4/appstarter` then `composer update` whenever
-there is a new release of the framework.
+## Konfigurasi
 
-When updating, check the release notes to see if there are any changes you might need to apply
-to your `app` folder. The affected files can be copied or merged from
-`vendor/codeigniter4/framework/app`.
+Pastikan kamu sudah menjalankan local server kamu, kemudian ubah file `env` menjadi `.env` dan migrate file database dengan cara `php sprak migrate` kemudain jalankan server `php sprak serve`
 
-## Setup
+## Screenshots
 
-Copy `env` to `.env` and tailor for your app, specifically the baseURL
-and any database settings.
+![Screenshot (40)](https://user-images.githubusercontent.com/46182403/90000609-9892b280-dcba-11ea-90b9-9442eac18100.png)
+**Halaman Home Page**
 
-## Important Change with index.php
+![Screenshot (41)](https://user-images.githubusercontent.com/46182403/90000658-a6e0ce80-dcba-11ea-96ab-a8bb83d1baa2.png)
+**Halaman Detail Sekolah**
 
-`index.php` is no longer in the root of the project! It has been moved inside the *public* folder,
-for better security and separation of components.
+![Screenshot (42)](https://user-images.githubusercontent.com/46182403/90000708-b233fa00-dcba-11ea-8bb7-c24cfd1533db.png)
+**Table Data Sekolah**
 
-This means that you should configure your web server to "point" to your project's *public* folder, and
-not to the project root. A better practice would be to configure a virtual host to point there. A poor practice would be to point your web server to the project root and expect to enter *public/...*, as the rest of your logic and the
-framework are exposed.
+![Screenshot (43)](https://user-images.githubusercontent.com/46182403/90000746-be1fbc00-dcba-11ea-9023-e2642ce3a42c.png)
+**Halaman Masuk**
 
-**Please** read the user guide for a better explanation of how CI4 works!
-The user guide updating and deployment is a bit awkward at the moment, but we are working on it!
+![Screenshot (44)](https://user-images.githubusercontent.com/46182403/90000787-c8da5100-dcba-11ea-8534-e1c6d95153cd.png)
+**Halaman Mendaftar**
 
-## Repository Management
+![Screenshot (45)](https://user-images.githubusercontent.com/46182403/90000813-d263b900-dcba-11ea-89f4-4e74f016a1fb.png)
+**Halaman Dashboard Admin**
 
-We use Github issues, in our main repository, to track **BUGS** and to track approved **DEVELOPMENT** work packages.
-We use our [forum](http://forum.codeigniter.com) to provide SUPPORT and to discuss
-FEATURE REQUESTS.
+![Screenshot (46)](https://user-images.githubusercontent.com/46182403/90000946-0048fd80-dcbb-11ea-8563-3dfe3cd47689.png)
+**Halaman Tambah Sekolah**
 
-This repository is a "distribution" one, built by our release preparation script. 
-Problems with it can be raised on our forum, or as issues in the main repository.
+Follow saya juga di [Instagram](https://instagram.com/rickymartin_) dan [Facebook](https://facebook.com/icky.12)
 
-## Server Requirements
 
-PHP version 7.2 or higher is required, with the following extensions installed: 
-
-- [intl](http://php.net/manual/en/intl.requirements.php)
-- [libcurl](http://php.net/manual/en/curl.requirements.php) if you plan to use the HTTP\CURLRequest library
-
-Additionally, make sure that the following extensions are enabled in your PHP:
-
-- json (enabled by default - don't turn it off)
-- [mbstring](http://php.net/manual/en/mbstring.installation.php)
-- [mysqlnd](http://php.net/manual/en/mysqlnd.install.php)
-- xml (enabled by default - don't turn it off)
