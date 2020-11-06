@@ -8,7 +8,7 @@ $routes = Services::routes();
 // Load the system's routing file first, so that the app and ENVIRONMENT
 // can override as needed.
 if (file_exists(SYSTEMPATH . 'Config/Routes.php')) {
-	require SYSTEMPATH . 'Config/Routes.php';
+    require SYSTEMPATH . 'Config/Routes.php';
 }
 
 /**
@@ -32,26 +32,26 @@ $routes->setAutoRoute(true);
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
+
+$routes->group('auth', function ($routes) {
+    $routes->get('/', 'Auth::index');
+    $routes->get('login', 'Auth::index');
+    $routes->post('ceklogin', 'Auth::ceklogin');
+    $routes->get('register', 'Auth::register');
+    $routes->post('prosesregis', 'Auth::prosesregis');
+    $routes->get('logout', 'Auth::logout');
+});
+
 $routes->get('table', 'Home::table');
-$routes->get('dashboard', 'Dashboard::index', ['filter' => 'login']);
+$routes->get('dashboard', 'Dashboard::index', ['filter' => 'ceklogin']);
 
-$routes->group('', ['filter' => 'login'], function ($routes) {
-	$routes->get('form/createsekolah', 'Form::createsekolah');
-	$routes->get('form/datasekolah', 'Form::datasekolah');
-	$routes->get('form/update/(:segment)', 'Form::update/$1');
-	$routes->get('form/hapus/(:num)', 'Form::hapus/$1');
+$routes->group('form', ['filter' => 'ceklogin'], function ($routes) {
+    $routes->get('createsekolah', 'Form::createsekolah');
+    $routes->get('datasekolah', 'Form::datasekolah');
+    $routes->get('update/(:segment)', 'Form::update/$1');
+    $routes->get('hapus/(:num)', 'Form::hapus/$1');
 });
 
-$routes->group('', ['namespace' => 'Myth\Auth\Controllers'], function ($routes) {
-	// Login/out
-	$routes->get('login', 'AuthController::login', ['as' => 'login']);
-	$routes->post('login', 'AuthController::attemptLogin');
-	$routes->get('logout', 'AuthController::logout');
-
-	// Registration
-	$routes->get('register', 'AuthController::register', ['as' => 'register']);
-	$routes->post('register', 'AuthController::attemptRegister');
-});
 $routes->get('/(:segment)', 'Home::detail/$1');
 
 /**
@@ -68,5 +68,5 @@ $routes->get('/(:segment)', 'Home::detail/$1');
  * needing to reload it.
  */
 if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
-	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
+    require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
