@@ -32,10 +32,10 @@ Pastikan kamu sudah menjalankan local server kamu, kemudian ubah file `env` menj
 ![Screenshot (42)](https://user-images.githubusercontent.com/46182403/90000708-b233fa00-dcba-11ea-8bb7-c24cfd1533db.png)
 **Table Data Sekolah**
 
-![Screenshot (43)](https://user-images.githubusercontent.com/46182403/90000746-be1fbc00-dcba-11ea-9023-e2642ce3a42c.png)
+![Screenshot (90)](https://user-images.githubusercontent.com/46182403/98374282-0446aa80-2073-11eb-8dd2-9524325fb511.png)
 **Halaman Masuk**
 
-![Screenshot (44)](https://user-images.githubusercontent.com/46182403/90000787-c8da5100-dcba-11ea-8534-e1c6d95153cd.png)
+![Screenshot (91)](https://user-images.githubusercontent.com/46182403/98374313-0d377c00-2073-11eb-9bca-31eefa323c4e.png)
 **Halaman Mendaftar**
 
 ![Screenshot (45)](https://user-images.githubusercontent.com/46182403/90000813-d263b900-dcba-11ea-89f4-4e74f016a1fb.png)
