@@ -5,7 +5,6 @@
 Web Geographic Information System ( WebGIS ). Menurut Prahasta (2007), WebGIS adalah aplikasi GIS atau pemetaan digital
 Website ini di kembangkan dengan
 [Codeigniter 4 ](https://codeigniter.com/)
-[Myth Auth](https://github.com/lonnieezell/myth-auth)
 [LeaFlet](https://leafletjs.com/)
 [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/)
 
